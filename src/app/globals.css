@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --background: #faf4e5;
+  --foreground: #0d0d0d;
+  --primary: #ff9800;
+  --accent: #ffb84c;
+  --border: #ff9800;
+}
+
+.dark {
+  --background: #0d0d0d;
+  --foreground: #faf4e5;
+  --primary: #ff9800;
+  --accent: #ffb84c;
+  --border: #ff9800;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Space Mono", monospace;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Retro pixel border utility */
+.pixel-border {
+  border: 2px solid var(--border);
+  position: relative;
+}
+
+.pixel-border::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2px solid var(--border);
+  z-index: -1;
+}
+
+/* Scanline effect */
+.scanlines {
+  position: relative;
+  overflow: hidden;
+}
+
+.scanlines::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(transparent 50%, rgba(255, 152, 0, 0.03) 50%);
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* CRT flicker effect */
+.crt-flicker {
+  animation: flicker 0.15s infinite linear;
+}
+
+/* Pixel glow effect */
+.pixel-glow {
+  animation: pixel-glow 2s ease-in-out infinite alternate;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Selection color */
+::selection {
+  background: var(--primary);
+  color: var(--background);
+}
+
+/* Focus styles */
+*:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Smooth transitions */
+* {
+  transition: color 0.3s ease, background-color 0.3s ease,
+    border-color 0.3s ease;
+}

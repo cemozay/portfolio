@@ -1,0 +1,90 @@
+{
+  "common": {
+    "navigation": {
+      "home": "Ana Sayfa",
+      "projects": "Projeler",
+      "about": "Hakkımda",
+      "contact": "İletişim"
+    },
+    "buttons": {
+      "viewProjects": "Projelerimi Gör",
+      "getInTouch": "İletişime Geç",
+      "viewCode": "Kodu Gör",
+      "liveDemo": "Canlı Demo",
+      "sendMessage": "Mesaj Gönder"
+    },
+    "language": {
+      "switchTo": "Switch to English"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Merhaba, Ben Yunus Cem",
+      "subtitle": "Full Stack Developer",
+      "description": "Modern web ve mobil uygulamalar geliştiriyorum. Temiz kod ve pixel-perfect tasarımlar konusunda tutkulu."
+    },
+    "featuredProjects": {
+      "title": "Öne Çıkan Projeler",
+      "subtitle": "Son çalışmalarımdan bazıları"
+    },
+    "skills": {
+      "title": "Teknoloji Yığını",
+      "subtitle": "Çalıştığım teknolojiler"
+    }
+  },
+  "projects": {
+    "title": "Projelerim",
+    "subtitle": "Çalışmalarımın koleksiyonu",
+    "filter": {
+      "all": "Tümü",
+      "web": "Web",
+      "mobile": "Mobil",
+      "backend": "Backend"
+    },
+    "noProjects": "Proje bulunamadı"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "subtitle": "Beni daha iyi tanıyın",
+    "description": "Web, mobil ve oyun geliştirme deneyimi olan tutkulu bir full-stack developer'ım. Unity mobil oyun geliştirme ile programlamaya başladım ve şimdi modern teknolojilerle çalışıyorum.",
+    "education": {
+      "title": "Eğitim",
+      "degree": "Elektrik Mühendisliği",
+      "university": "Yıldız Teknik Üniversitesi",
+      "year": "2021-2025"
+    },
+    "experience": {
+      "title": "Deneyim",
+      "current": "Şu an"
+    },
+    "interests": {
+      "title": "İlgi Alanları",
+      "items": [
+        "Oyun Geliştirme",
+        "Web Geliştirme",
+        "Mobil Geliştirme", 
+        "Oyun Oynama",
+        "Müzik",
+        "Sinema"
+      ]
+    }
+  },
+  "contact": {
+    "title": "İletişime Geçin",
+    "subtitle": "Birlikte çalışalım",
+    "description": "Her zaman yeni fırsatlar ve heyecan verici projelerle ilgileniyorum. Çekinmeden iletişime geçin!",
+    "form": {
+      "name": "İsim",
+      "email": "E-posta",
+      "subject": "Konu",
+      "message": "Mesaj",
+      "send": "Mesaj Gönder"
+    },
+    "social": {
+      "email": "E-posta",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "common": {
+    "navigation": {
+      "home": "Home",
+      "projects": "Projects",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "buttons": {
+      "viewProjects": "View Projects",
+      "getInTouch": "Get In Touch",
+      "viewCode": "View Code",
+      "liveDemo": "Live Demo",
+      "sendMessage": "Send Message"
+    },
+    "language": {
+      "switchTo": "Switch to Turkish"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Hi, I'm Yunus Cem",
+      "subtitle": "Full Stack Developer",
+      "description": "I create modern web and mobile applications. Passionate about clean code and pixel-perfect designs."
+    },
+    "featuredProjects": {
+      "title": "Featured Projects",
+      "subtitle": "Some of my recent work"
+    },
+    "skills": {
+      "title": "Tech Stack",
+      "subtitle": "Technologies I work with"
+    }
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "A collection of my work",
+    "filter": {
+      "all": "All",
+      "web": "Web",
+      "mobile": "Mobile",
+      "backend": "Backend"
+    },
+    "noProjects": "No projects found"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Get to know me better",
+    "description": "I'm a passionate full-stack developer with experience in web, mobile, and game development. I started programming with Unity mobile game development and now work with modern technologies.",
+    "education": {
+      "title": "Education",
+      "degree": "Electrical Engineering",
+      "university": "Yildiz Technical University",
+      "year": "2021-2025"
+    },
+    "experience": {
+      "title": "Experience",
+      "current": "Present"
+    },
+    "interests": {
+      "title": "Interests",
+      "items": [
+        "Game Development",
+        "Web Development", 
+        "Mobile Development",
+        "Gaming",
+        "Music",
+        "Cinema"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's work together",
+    "description": "I'm always interested in new opportunities and exciting projects. Feel free to reach out!",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message"
+    },
+    "social": {
+      "email": "Email",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter"
+    }
+  }
+}
