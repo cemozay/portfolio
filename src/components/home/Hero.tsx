@@ -5,7 +5,6 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useLocale } from "next-intl";
 import Button from "../ui/Button";
-import { personalInfo } from "@/data/personal";
 
 export default function Hero() {
   const t = useTranslations("home.hero");

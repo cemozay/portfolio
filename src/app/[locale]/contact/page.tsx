@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 import { personalInfo } from "@/data/personal";
-import { Mail, Github, Linkedin, Twitter, MapPin, Phone } from "lucide-react";
+import { Mail, Github, Linkedin, Twitter, MapPin } from "lucide-react";
 
 export default function ContactPage() {
   const t = useTranslations("contact");
