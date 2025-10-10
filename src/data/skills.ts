@@ -39,16 +39,6 @@ export const skills: Skill[] = [
   {
     name: "Tailwind CSS",
     category: "frontend",
-    icon: "💨",
-  },
-  {
-    name: "HTML5",
-    category: "frontend",
-    icon: "📄",
-  },
-  {
-    name: "CSS3",
-    category: "frontend",
     icon: "🎨",
   },
   {
@@ -64,14 +54,9 @@ export const skills: Skill[] = [
 
   // Backend
   {
-    name: "MSSQL",
+    name: "Node.js",
     category: "backend",
-    icon: "🗄️",
-  },
-  {
-    name: "PostgreSQL",
-    category: "backend",
-    icon: "🐘",
+    icon: "🟢",
   },
   {
     name: "Firebase",
@@ -79,9 +64,14 @@ export const skills: Skill[] = [
     icon: "🔥",
   },
   {
-    name: "Node.js",
+    name: "PostgreSQL",
     category: "backend",
-    icon: "🟢",
+    icon: "🐘",
+  },
+  {
+    name: "MSSQL",
+    category: "backend",
+    icon: "🗄️",
   },
   {
     name: "RESTful APIs",
@@ -113,19 +103,14 @@ export const skills: Skill[] = [
     icon: "📝",
   },
   {
-    name: "Linux",
+    name: "Docker",
     category: "tools",
-    icon: "🐧",
+    icon: "🐳",
   },
   {
-    name: "VS Code",
+    name: "n8n",
     category: "tools",
-    icon: "💻",
-  },
-  {
-    name: "Vercel",
-    category: "tools",
-    icon: "▲",
+    icon: "🔗",
   },
 ];
 

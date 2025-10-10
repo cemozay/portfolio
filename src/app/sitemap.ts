@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://cemozay.dev";
+  const baseUrl = "https://cemozay.com";
   const locales = ["en", "tr"];
   const pages = ["", "/projects", "/about", "/contact"];
 

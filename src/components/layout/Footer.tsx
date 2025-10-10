@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,10 +11,9 @@ export default function Footer() {
     {
       name: "LinkedIn",
       icon: Linkedin,
-      href: "https://linkedin.com/in/cemozay",
+      href: "https://linkedin.com/in/yunuscemozay",
     },
-    { name: "Email", icon: Mail, href: "mailto:cem@example.com" },
-    { name: "Twitter", icon: Twitter, href: "https://twitter.com/cemozay" },
+    { name: "Email", icon: Mail, href: "mailto:cemyunusozay@gmail.com" },
   ];
 
   return (
@@ -35,12 +34,12 @@ export default function Footer() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            © {currentYear} Cem. All rights reserved.
+            © {currentYear} Yunus Cem Özay. All rights reserved.
           </motion.div>
 
           {/* Social Links */}
           <div className="flex space-x-4">
-            {socialLinks.map((social, index) => (
+            {socialLinks.map((social) => (
               <motion.a
                 key={social.name}
                 href={social.href}
@@ -51,24 +50,13 @@ export default function Footer() {
                 whileTap={{ scale: 0.9 }}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
               >
                 <social.icon size={20} />
               </motion.a>
             ))}
           </div>
-
-          {/* Made with */}
-          <motion.div
-            className="font-mono text-sm text-retro-text dark:text-retro-text-dark"
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            Made with ❤️ and pixels
-          </motion.div>
         </div>
       </div>
     </motion.footer>

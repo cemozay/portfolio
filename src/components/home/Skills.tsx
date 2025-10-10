@@ -69,7 +69,7 @@ export default function Skills() {
 
         {/* Skills Grid */}
         <motion.div
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
@@ -85,9 +85,9 @@ export default function Skills() {
               viewport={{ once: true }}
               whileHover={{ scale: 1.1 }}
             >
-              <div className="bg-retro-bg dark:bg-retro-bg-dark border-2 border-retro-primary dark:border-retro-border-dark p-4 h-24 flex flex-col items-center justify-center hover:border-retro-accent dark:hover:border-retro-accent transition-all duration-300">
-                <div className="text-2xl mb-2">{skill.icon}</div>
-                <div className="font-mono text-xs text-retro-text dark:text-retro-text-dark">
+              <div className="bg-retro-bg dark:bg-retro-bg-dark border-2 border-retro-primary dark:border-retro-border-dark p-3 h-20 flex flex-col items-center justify-center hover:border-retro-accent dark:hover:border-retro-accent transition-all duration-300">
+                <div className="text-xl mb-1">{skill.icon}</div>
+                <div className="font-mono text-xs text-retro-text dark:text-retro-text-dark text-center leading-tight">
                   {skill.name}
                 </div>
               </div>

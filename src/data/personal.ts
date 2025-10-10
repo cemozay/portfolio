@@ -5,14 +5,13 @@ export interface PersonalInfo {
   email: string;
   github: string;
   linkedin: string;
-  twitter?: string;
   location: string;
   avatar: string;
 }
 
 export interface Education {
   degree: string;
-  university: string;
+  school: string;
   year: string;
   description?: string;
 }
@@ -46,7 +45,7 @@ export const personalInfo: PersonalInfo = {
 export const education: Education[] = [
   {
     degree: "Electrical Engineering",
-    university: "Yildiz Technical University",
+    school: "Yildiz Technical University",
     year: "2021-2025",
     description:
       "Bachelor of Science in Electrical Engineering with focus on software engineering, web development and mobile development.",

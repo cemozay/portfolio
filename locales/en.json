@@ -7,7 +7,7 @@
       "contact": "Contact"
     },
     "buttons": {
-      "viewProjects": "View Projects",
+      "viewProjects": "Learn More",
       "getInTouch": "Get In Touch",
       "viewCode": "View Code",
       "liveDemo": "Live Demo",
@@ -61,7 +61,7 @@
       "title": "Interests",
       "items": [
         "Game Development",
-        "Web Development", 
+        "Web Development",
         "Mobile Development",
         "Gaming",
         "Music",
@@ -83,8 +83,7 @@
     "social": {
       "email": "Email",
       "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "twitter": "Twitter"
+      "linkedin": "LinkedIn"
     }
   }
 }

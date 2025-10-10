@@ -2,8 +2,6 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
-import { useLocale } from "next-intl";
 import Card from "../ui/Card";
 import Button from "../ui/Button";
 import Badge from "../ui/Badge";
@@ -13,12 +11,13 @@ import { ExternalLink, Github } from "lucide-react";
 export default function FeaturedProjects() {
   const t = useTranslations("home.featuredProjects");
   const tButtons = useTranslations("common.buttons");
-  const locale = useLocale();
-
-  const featuredProjects = projects.filter((project) => project.featured);
+  const featuredProjects = projects;
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 scroll-snap-align-start">
+    <section
+      className="py-20 px-4 sm:px-6 lg:px-8"
+      style={{ scrollSnapAlign: "start" }}
+    >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div
@@ -111,21 +110,6 @@ export default function FeaturedProjects() {
             </motion.div>
           ))}
         </div>
-
-        {/* View All Projects Button */}
-        <motion.div
-          className="text-center mt-12"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true }}
-        >
-          <Link href={`/${locale}/projects`}>
-            <Button size="lg" variant="outline">
-              {tButtons("viewProjects")}
-            </Button>
-          </Link>
-        </motion.div>
       </div>
     </section>
   );

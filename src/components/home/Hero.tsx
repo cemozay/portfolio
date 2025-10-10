@@ -28,7 +28,7 @@ export default function Hero() {
           >
             <div className="w-32 h-32 mx-auto border-4 border-retro-primary dark:border-retro-border-dark bg-retro-bg dark:bg-retro-bg-dark pixel-glow">
               <div className="w-full h-full bg-retro-primary/20 flex items-center justify-center font-pixel text-4xl text-retro-primary dark:text-retro-text-dark">
-                C
+                YC
               </div>
             </div>
           </motion.div>
@@ -70,7 +70,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}
           >
-            <Link href={`/${locale}/projects`}>
+            <Link href={`/${locale}/about`}>
               <Button size="lg" variant="primary">
                 {tButtons("viewProjects")}
               </Button>
@@ -80,26 +80,6 @@ export default function Hero() {
                 {tButtons("getInTouch")}
               </Button>
             </Link>
-          </motion.div>
-
-          {/* Scroll indicator */}
-          <motion.div
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1.2 }}
-          >
-            <motion.div
-              className="w-6 h-10 border-2 border-retro-primary dark:border-retro-border-dark rounded-full flex justify-center"
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            >
-              <motion.div
-                className="w-1 h-3 bg-retro-primary dark:bg-retro-text-dark rounded-full mt-2"
-                animate={{ opacity: [1, 0, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              />
-            </motion.div>
           </motion.div>
         </motion.div>
       </div>

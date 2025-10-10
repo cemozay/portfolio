@@ -7,7 +7,7 @@
       "contact": "İletişim"
     },
     "buttons": {
-      "viewProjects": "Projelerimi Gör",
+      "viewProjects": "Daha Fazla Bilgi",
       "getInTouch": "İletişime Geç",
       "viewCode": "Kodu Gör",
       "liveDemo": "Canlı Demo",
@@ -62,7 +62,7 @@
       "items": [
         "Oyun Geliştirme",
         "Web Geliştirme",
-        "Mobil Geliştirme", 
+        "Mobil Geliştirme",
         "Oyun Oynama",
         "Müzik",
         "Sinema"
@@ -83,8 +83,7 @@
     "social": {
       "email": "E-posta",
       "github": "GitHub",
-      "linkedin": "LinkedIn",
-      "twitter": "Twitter"
+      "linkedin": "LinkedIn"
     }
   }
 }

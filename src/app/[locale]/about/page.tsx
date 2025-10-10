@@ -22,15 +22,14 @@ export default function AboutPage() {
   const t = useTranslations("about");
 
   return (
-    <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 scroll-snap-align-start scroll-snap-type-y-mandatory">
+    <div className="scanlines min-h-screen py-20 px-4 sm:px-6 lg:px-8 scroll-snap-align-start scroll-snap-type-y-mandatory">
       <div className="max-w-7xl mx-auto">
         {/* Page Header */}
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
         >
           <h1 className="font-pixel text-4xl sm:text-5xl lg:text-6xl text-retro-primary dark:text-retro-text-dark mb-4">
             {t("title")}
@@ -44,9 +43,8 @@ export default function AboutPage() {
         <motion.div
           className="mb-16"
           initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
         >
           <Card className="text-center">
             {/* Avatar */}
@@ -80,9 +78,8 @@ export default function AboutPage() {
           {/* Education */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
           >
             <Card>
               <div className="flex items-center mb-6">
@@ -101,7 +98,7 @@ export default function AboutPage() {
                     {edu.degree}
                   </div>
                   <div className="font-mono text-sm text-retro-primary dark:text-retro-text-dark mb-1">
-                    {edu.university}
+                    {edu.school}
                   </div>
                   <div className="flex items-center text-sm text-retro-text dark:text-retro-text-dark">
                     <Calendar size={14} className="mr-2" />
@@ -120,9 +117,8 @@ export default function AboutPage() {
           {/* Experience */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            viewport={{ once: true }}
           >
             <Card>
               <div className="flex items-center mb-6">

@@ -15,14 +15,13 @@ export default function Header() {
 
   const navigation = [
     { name: t("home"), href: `/${locale}` },
-    { name: t("projects"), href: `/${locale}/projects` },
     { name: t("about"), href: `/${locale}/about` },
     { name: t("contact"), href: `/${locale}/contact` },
   ];
 
   return (
     <motion.header
-      className="fixed top-0 left-0 right-0 z-50 bg-retro-bg/90 dark:bg-retro-bg-dark/90 backdrop-blur-sm border-b-2 border-retro-primary dark:border-retro-border-dark"
+      className="fixed top-0 left-0 right-0 z-50 bg-retro-bg/70 dark:bg-retro-bg-dark/70 backdrop-blur-sm border-b-2 border-retro-primary dark:border-retro-border-dark"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}

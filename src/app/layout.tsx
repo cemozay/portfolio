@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Cem Ozay - Full Stack Developer",
+  title: "Yunus Cem Özay",
   description:
     "Modern web applications with a retro twist. Full stack developer passionate about clean code and pixel-perfect designs.",
   keywords: [
@@ -16,23 +14,21 @@ export const metadata: Metadata = {
     "retro",
     "pixel art",
   ],
-  authors: [{ name: "Cem Ozay" }],
-  creator: "Cem Ozay",
+  authors: [{ name: "Yunus Cem Özay" }],
+  creator: "Yunus Cem Özay",
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://cemozay.dev",
-    title: "Cem Ozay - Full Stack Developer",
+    url: "https://cemozay.com",
+    title: "Yunus Cem Özay",
     description:
       "Modern web applications with a retro twist. Full stack developer passionate about clean code and pixel-perfect designs.",
-    siteName: "Cem Ozay Portfolio",
+    siteName: "Yunus Cem Özay",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cem Ozay - Full Stack Developer",
+    title: "Yunus Cem Özay",
     description:
       "Modern web applications with a retro twist. Full stack developer passionate about clean code and pixel-perfect designs.",
-    creator: "@cemozay",
   },
   robots: {
     index: true,
@@ -47,20 +43,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const messages = await getMessages();
-
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className="antialiased">
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
-      </body>
+    <html data-scroll-behavior="smooth">
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 import { personalInfo } from "@/data/personal";
-import { Mail, Github, Linkedin, Twitter, MapPin } from "lucide-react";
+import { Mail, Github, Linkedin, MapPin } from "lucide-react";
 
 export default function ContactPage() {
   const t = useTranslations("contact");
@@ -54,24 +54,17 @@ export default function ContactPage() {
       href: `https://linkedin.com/in/${personalInfo.linkedin}`,
       color: "text-blue-600",
     },
-    {
-      name: tSocial("twitter"),
-      icon: Twitter,
-      href: `https://twitter.com/${personalInfo.twitter}`,
-      color: "text-blue-400",
-    },
   ];
 
   return (
-    <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 scroll-snap-align-start scroll-snap-type-y-mandatory">
+    <div className="scanlines min-h-screen py-20 px-4 sm:px-6 lg:px-8 scroll-snap-align-start scroll-snap-type-y-mandatory">
       <div className="max-w-7xl mx-auto">
         {/* Page Header */}
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
         >
           <h1 className="font-pixel text-4xl sm:text-5xl lg:text-6xl text-retro-primary dark:text-retro-text-dark mb-4">
             {t("title")}
@@ -85,9 +78,8 @@ export default function ContactPage() {
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
           >
             <Card>
               <h2 className="font-pixel text-2xl text-retro-primary dark:text-retro-text-dark mb-6">
@@ -177,9 +169,8 @@ export default function ContactPage() {
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
           >
             <Card>
               <h2 className="font-pixel text-2xl text-retro-primary dark:text-retro-text-dark mb-6">
@@ -232,9 +223,8 @@ export default function ContactPage() {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
+                      animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.4, delay: index * 0.1 }}
-                      viewport={{ once: true }}
                     >
                       <social.icon
                         size={20}
